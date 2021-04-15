@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UITableViewController {
 
     static var data = [Data]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Accounts"
@@ -53,12 +54,12 @@ class ViewController: UITableViewController {
         case .QR:
             if let vc = storyboard?.instantiateViewController(identifier: "QR") as? QRViewController {
                 vc.data = ViewController.data[indexPath.row]
-                present(vc, animated: true)
+                navigationController?.pushViewController(vc, animated: true)
             }
         
         case .OTP:
             if let vc = storyboard?.instantiateViewController(identifier: "OTP") as? OTPViewController {
-            present(vc, animated: true)
+                navigationController?.pushViewController(vc, animated: true)
             }
         }
     }

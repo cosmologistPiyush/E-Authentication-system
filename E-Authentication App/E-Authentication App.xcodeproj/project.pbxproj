@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		724D44A42627A58800B64FCD /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44A32627A58800B64FCD /* data.swift */; };
-		724D44A72627A60800B64FCD /* array_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D44A62627A60800B64FCD /* array_data.swift */; };
 		7271769925C68F7E00AEDCF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271769825C68F7E00AEDCF3 /* AppDelegate.swift */; };
 		7271769B25C68F7E00AEDCF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271769A25C68F7E00AEDCF3 /* SceneDelegate.swift */; };
 		7271769D25C68F7E00AEDCF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7271769C25C68F7E00AEDCF3 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 
 /* Begin PBXFileReference section */
 		724D44A32627A58800B64FCD /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
-		724D44A62627A60800B64FCD /* array_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = array_data.swift; sourceTree = "<group>"; };
 		7271769525C68F7E00AEDCF3 /* E-Authentication App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Authentication App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7271769825C68F7E00AEDCF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7271769A25C68F7E00AEDCF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				7271769A25C68F7E00AEDCF3 /* SceneDelegate.swift */,
 				7271769C25C68F7E00AEDCF3 /* ViewController.swift */,
 				724D44A32627A58800B64FCD /* data.swift */,
-				724D44A62627A60800B64FCD /* array_data.swift */,
 				72A6B09425F7A2CA00D1BF85 /* QRGenerator.swift */,
 				72A6B09625F7A32700D1BF85 /* OTPGenerator.swift */,
 				7271769E25C68F7E00AEDCF3 /* Main.storyboard */,
@@ -159,7 +156,6 @@
 				72A6B09525F7A2CA00D1BF85 /* QRGenerator.swift in Sources */,
 				727176AF25C6CFE500AEDCF3 /* OTPViewController.swift in Sources */,
 				7271769D25C68F7E00AEDCF3 /* ViewController.swift in Sources */,
-				724D44A72627A60800B64FCD /* array_data.swift in Sources */,
 				72A6B09725F7A32700D1BF85 /* OTPGenerator.swift in Sources */,
 				7271769925C68F7E00AEDCF3 /* AppDelegate.swift in Sources */,
 				7271769B25C68F7E00AEDCF3 /* SceneDelegate.swift in Sources */,

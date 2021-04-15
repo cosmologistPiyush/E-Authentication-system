@@ -10,10 +10,8 @@ import UIKit
 
 class QRViewController: UIViewController {
     
-    @IBOutlet weak var qrImageView: UIImageView!
-
     var data: Data?
-    
+    @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var timeRemainingLabel: UILabel!
     
     
@@ -30,6 +28,7 @@ class QRViewController: UIViewController {
             let image = UIImage(ciImage: (filter?.outputImage)!)
             qrImageView.image = image
         }
+
     
     }
     

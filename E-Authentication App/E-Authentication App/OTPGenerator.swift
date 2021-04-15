@@ -11,7 +11,7 @@ import UIKit
 class OTPGenerator: UIViewController {
 
     @IBOutlet weak var otpLabel: UILabel!
-    @IBOutlet weak var optname: UITextField!
+    @IBOutlet weak var otpname: UITextField!
     @IBOutlet weak var otpDescription: UITextField!
     @IBOutlet weak var otpPurpose: UITextField!
     
@@ -47,11 +47,11 @@ class OTPGenerator: UIViewController {
     }
     
     @objc func saveData() {
-        if let name = optname.text, let desc = otpDescription.text, let purpose = otpPurpose.text {
+        if let name = otpname.text, let desc = otpDescription.text, let purpose = otpPurpose.text {
             let newInstance = Data(type: .OTP, name: name, description: desc, purpose: purpose)
             if let vc = storyboard?.instantiateViewController(identifier: "Main") as? ViewController {
                 ViewController.data.append(newInstance)
-                present(vc, animated: true)
+                navigationController?.pushViewController(vc, animated: true)
             }
         }
     }

@@ -39,7 +39,7 @@ class QRGenerator: UIViewController {
             let newInstance = Data(type: .QR, name: name, description: desc, purpose: purpose)
             if let vc = storyboard?.instantiateViewController(identifier: "Main") as? ViewController {
                 ViewController.data.append(newInstance)
-                present(vc, animated: true)
+                navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
