@@ -46,6 +46,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Account", for: indexPath)
         cell.textLabel?.text = ViewController.data[indexPath.row].name
+        
         return cell
     }
     
