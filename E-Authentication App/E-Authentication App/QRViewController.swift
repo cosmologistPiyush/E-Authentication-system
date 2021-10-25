@@ -14,6 +14,8 @@ class QRViewController: UIViewController {
     @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var timeRemainingLabel: UILabel!
     
+    var counter = 30
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +30,8 @@ class QRViewController: UIViewController {
             let image = UIImage(ciImage: (filter?.outputImage)!)
             qrImageView.image = image
         }
-
-    
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
     }
     
     @objc func shareTapped() {
@@ -37,15 +39,15 @@ class QRViewController: UIViewController {
         ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(ac, animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func timerAction() {
+        if (Int(timeRemainingLabel.text ?? "") == 0){
+            timer.invalidate()
+            timeRemainingLabel.text = "QR Expired!!"
+        }
+        else{
+            counter -= 1
+            timeRemainingLabel.text = "\(counter)"
+        }
     }
-    */
-
 }
